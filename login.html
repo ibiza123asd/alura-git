@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>TODO write content</div>
+    </body>
+    <script>
+
+        var inicioDeSesionRegistrado = "alura";
+        var contrasenhaRegistrada = "alura321";
+        var i = 1;
+        while (i <= 3) {
+            var inicioDeSesionIngresado = prompt("Ingrese su usuario");
+            var contrasenhaIngresada = prompt("Ingrese su contraseña");
+
+            if (inicioDeSesionRegistrado == inicioDeSesionIngresado && contrasenhaRegistrada == contrasenhaIngresada) {
+                alert("Bienvenido al sistema " + inicioDeSesionIngresado);
+                break;
+            } else {
+                if(i==3){
+                    alert("Limite de intentos utilizados");
+                }else{
+                    alert("inicio de sesión inválido. Favor intente de nuevo");
+                }
+            }
+            i++;
+        }
+        document.write("Fin");
+    </script>
+</html>

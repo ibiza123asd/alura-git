@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>Calcular el IMC</h1>
+    </body>
+
+    <script>
+        function saltarLinea() {
+
+            document.write("<br><br><hr><br>");
+
+        }
+        function imprimir(frase) {
+
+            document.write(frase);
+            saltarLinea();
+        }
+
+        function calcularIMC(peso, altura) {
+            imC = peso / (altura * altura);
+            return imC;
+
+        }
+        function promedioIMC(valor1, valor2) {
+            return (valor1 + valor2) / 2;
+        }
+
+        //el prompt es para interactura con el usuario
+        //document.write es para responde texto en javascript
+        //console.log es para respondr por medio de una ventana desde javascript
+        var nombre = prompt("Informe su nombre:");
+        var pesoInformado = parseInt(prompt(nombre + ", Informe su peso"));
+        var alturaInformada = parseFloat(prompt(nombre + ", Informe su altura"));
+
+        imcCalculado = calcularIMC(pesoInformado, alturaInformada);
+
+        imprimir(nombre + ", su IMC calculado es: " + imcCalculado);
+        if (imcCalculado < 18.5) {
+            this.imprimir("Su IMC Tiene insuficiencia ponderal");
+        } else if (imcCalculado >= 18.5 && imcCalculado <= 24.9) {
+            this.imprimir("Su IMC es de intervalo normal");
+        } else if (imcCalculado >= 25 && imcCalculado <= 29.9) {
+            this.imprimir("Su IMC Tiene preobesidad");
+        } else {
+            this.imprimir("Su IMC Presenta Preobesidad");
+        }
+    </script>
+</html>

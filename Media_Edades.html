@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>Media Edades Familia</h1>
+    </body>
+    <script type="text/javascript">
+        function saltarLinea() {
+            document.write("<br>");
+        }
+
+        function imprimir(frase) {
+            document.write(frase);
+            saltarLinea();
+        }
+
+        
+        var integrantes = parseInt(prompt("Ingresar la # de integrantes:"));
+        var sumaEdad = 0;
+        for (var i = 1; i <= integrantes; i++) {
+            var edad = parseInt(prompt("Ingresar la edad"));
+            sumaEdad = sumaEdad + edad;
+
+        }
+
+        var promedio = sumaEdad / integrantes;
+
+        imprimir("La media de los " + integrantes + " es " + Math.round(promedio) + " años");
+    </script>
+</html>

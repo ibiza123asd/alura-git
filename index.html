@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!--
+las etiquetas se deben definir en minúscula
+alert("Esto si es lenguaje de programación");
+            alert("La edad de Brandon es: ..")
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+
+        <!-- se corrige el tema de las acentuaciones-->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>mi primer programa HTML!!</h1>
+        <br>
+        <p>sera esto realmente un programa?</p>
+        <a href="https://www.youtube.com/watch?v=ZhXdFO6SxQ4">
+            Click en el enlace</a>
+        <br><br>
+
+        <script>
+            function saltarLinea() {
+
+                document.write("<br><br><br>");
+
+            }
+            function imprimir(frase) {
+                document.write(frase);
+                saltarLinea();
+
+            }
+            var año = 2022;
+            var saltosLinea = "<br><br>"
+            // los siguientes códigos se encargan de calcular la edad, año y promedio de las edades
+            imprimir("El promedio de A, B yC es...");
+            imprimir((20 + 15 + 30) / 3);
+            imprimir("<br>El promedio de D, E y F es..." + (20 + 15 + 30) / 3);
+            //document.write(saltosLinea)
+
+            imprimir("<br>El año de nacimiento de D es:" + (2022 - 20));
+            imprimir("<br>El año de nacimiento de E es:" + (2022 - 15));
+            imprimir("<br>El año de nacimiento de F es:" + (2022 - 30));
+           
+
+            imprimir("<br>La edad de A es:" + (2022 - 2000) + " años");
+            imprimir("<br>La edad de B es:" + (2022 - 2005) + " años");
+            imprimir("<br>La edad de de C es:" + (2022 - 1990) + " años");
+           
+
+            imprimir("<br>La edad de Martha es:" + (año - 2000) + " años");
+            imprimir("<br>La edad de Alejo es:" + (año - 2005) + " años");
+            imprimir("<br>La edad de Almendra es:" + (año - 1990) + " años");
+           
+
+            año = 2024;
+            imprimir("<br>La edad de Martha es:" + (año - 2000) + " años");
+            imprimir("<br>La edad de Alejo es:" + (año - 2005) + " años");
+            imprimir("<br>La edad de Almendra es:" + (año - 1990) + " años");
+            
+
+            var promedio;
+            var edadMartha = (año - 2000);
+            var edadAlejo = (año - 2005);
+            var edadAlmendra = (año - 1990);
+
+            var name1 = "Martha";
+            var name2 = "Alejo";
+            var name3 = "Almendra";
+            promedio = (edadMartha + edadAlejo + edadAlmendra) / 3;
+            imprimir("El promedio de las edades de " + name1 + ", " + name2 + " y " + name3 + " es: " + Math.round(promedio));
+            
+
+
+
+        </script>
+
+    </body>
+</html>

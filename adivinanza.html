@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>Advina el número</h1>
+    </body>
+
+    <script>
+        function saltarLinea() {
+
+            document.write("<br><br><hr><br>");
+
+        }
+        function imprimir(frase) {
+
+            alert(frase);
+            saltarLinea();
+        }
+
+        function loteria(n) {
+            return Math.round(Math.random() * n);
+        }
+        var numeroPensado = 8;
+
+        var intentos = 1;
+
+        while (intentos <= 3) {
+            var numeroLanzado = parseInt(prompt("Ingrese un número entre 0-10"));
+            if (numeroLanzado == numeroPensado) {
+                imprimir("usted acertó en el intento "+intentos+", el numero es:" + numeroPensado);
+                break;
+            } else {
+                if (numeroLanzado > numeroPensado) {
+                    imprimir("El número es menor que tu número:");
+
+                } else {
+                    imprimir("El número es mayor que tu número:")
+
+                }
+            }
+
+            intentos++;
+
+        }
+
+        if (numeroLanzado != numeroPensado) {
+            imprimir("Intentos finalizados, el número era: " + numeroPensado)
+        }
+        imprimir("Fin");
+    </script>
+</html>
